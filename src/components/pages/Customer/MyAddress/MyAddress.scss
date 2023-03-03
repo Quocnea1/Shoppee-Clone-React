@@ -1,0 +1,53 @@
+@import "../../../../style/mixin.scss";
+.MyAddress {
+  font-size: 18px;
+  margin: 40px 0;
+
+  .wrapper {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    background-color: $white-color;
+
+    .noAddress{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $text-color2;
+
+      .addressFigure{
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+
+        img{
+          opacity: 0.5
+        }
+      }
+    }
+    .title {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+
+      .mybtn {
+        padding: 0px;
+      }
+      .namehead {
+        font-size: 2rem;
+      }
+      .namehead2 {
+        span {
+          font-size: 500;
+          font-size: 1.9rem;
+          padding: 20px 10px;
+        }
+      }
+    }
+  }
+}

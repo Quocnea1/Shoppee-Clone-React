@@ -1,0 +1,109 @@
+@import "../../../style/mixin.scss";
+
+.footer {
+  font-size: 12px;
+  background-color: $white-color;
+  border-top: 5px solid $primary-color;
+  padding-bottom: 30px;
+
+  .footer_heading {
+    margin: 25px 0;
+  }
+  a {
+    color: $text-color2;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+  u {
+    color: $text-color2;
+  }
+  .linkMore {
+    color: $primary-color;
+  }
+  .footer-section-content {
+    padding-top: 40px;
+    justify-content: space-between;
+    display: flex;
+
+    .footer-items-customer ul,
+    .footer-items-shopee ul {
+      padding-left: 0px;
+    }
+
+    .footer-items-social ul {
+      padding-left: 0px;
+      .footer-items-social ul li {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+      }
+    }
+    .footer-items-social ul li {
+      display: flex;
+      justify-content: flex-start;
+      list-style: none;
+    }
+    .footer-items-social ul li a {
+      line-height: 3;
+    }
+
+    .footer_item_social {
+      width: 25px;
+    }
+    .footer-items {
+      display: flex;
+      justify-content: flex-start;
+      .footer-items-payment {
+        width: 50px;
+      }
+      .footer-items-ship {
+        width: 50px;
+      }
+    }
+    .footer-items-download {
+      .items-download {
+        display: flex;
+        flex-direction: row;
+        .footer_item_qrcode {
+          width: 70px;
+        }
+        .footer_item_app {
+          padding: 8px 0;
+          width: 70px;
+        }
+      }
+    }
+  }
+  .footer-last {
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: $text-color2;
+    display: flex;
+    justify-content: space-between;
+    .footer-last-country {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+  .footer-last-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+  }
+  .footer-last-year {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .footer-last-image {
+    display: flex;
+    justify-content: center;
+    .picDangky {
+      width: 10%;
+    }
+  }
+}

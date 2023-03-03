@@ -1,0 +1,75 @@
+@mixin Responsive($canvas) {
+  @if $canvas == XXS {
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 475.98px) {
+      @content;
+    }
+  } @else if $canvas == XS {
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 575.98px) {
+      @content;
+    }
+  } @else if $canvas == S {
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      @content;
+    }
+  } @else if $canvas == M {
+    // Medium devices (tablets, less than 992px)
+    @media (max-width: 991.98px) {
+      @content;
+    }
+  } @else if $canvas == L {
+    // Large devices (desktops, less than 1200px)
+    @media (max-width: 1199.98px) {
+      @content;
+    }
+  } @else if $canvas == XL {
+    // X-Large devices (large desktops, less than 1400px)
+    @media (max-width: 1399.98px) {
+      @content;
+    }
+  } @else if $canvas == Tablet {
+    // X-Large devices (large desktops, less than 1400px)
+    @media (max-width: 1023px) {
+      @content;
+    }
+  } @else if $canvas == Mobile {
+    // X-Large devices (large desktops, less than 1400px)
+    @media (max-width: 740px) {
+      @content;
+    }
+  }
+  
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin animate($str) {
+  animation: #{$str};
+}
+
+$primary-color: #ee4d2d;
+$primary-color2: #fff9f4;
+$border-color: #dbdbdb;
+$comment-color: #ebebeb;
+$white-color: #fff;
+$black-color: #000;
+$text-color: #333;
+$error-color: #f7b604;
+$star-gold-color: #ffce3e;
+$header-height: 120px;
+$navbar-height: 27px;
+$header-with-search-height: calc($header-height - $navbar-height);
+$growth-from: 0.7;
+$growth-to: 1;
+$height: 30px;
+$text-color2: #999;
+$hover-color: #ebebeb;
+$pending-color: #ffbb00;
+$success-color: #48ce3c;
+$failed-color: #e24529;

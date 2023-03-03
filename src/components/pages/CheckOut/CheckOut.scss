@@ -1,0 +1,52 @@
+@import "../../../style/mixin.scss";
+
+.checkout-table {
+  font-size: 14px;
+
+  .table {
+    background-color: white;
+    margin-bottom: 150px;
+
+    td,
+    th {
+      padding-left: 15px;
+      border: none;
+    }
+    tr {
+      border-top: 1px solid $border-color;
+    }
+    tfoot{
+      .moreMargin{
+        margin-right: -20px;
+      }
+    }
+  }
+
+  .message {
+    border-top: 1px dashed $border-color;
+    border-bottom: 1px dashed $border-color;
+
+    td {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-top: none;
+
+      input {
+        max-width: 300px;
+      }
+      .shippingFee{
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .total-money {
+    color: #fa5130;
+  }
+
+  .btn-order {
+    background: #fa5130;
+    padding: 0 70px;
+    
+  }
+}

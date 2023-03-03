@@ -1,0 +1,68 @@
+@import "../../../../style/mixin.scss";
+
+.recommendToday {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 50px;
+
+    .title {
+      width: 100%;
+      background-color: $white-color;
+      box-shadow: 0 2px 2px $border-color;
+      margin-bottom: 7px;
+
+      div {
+        cursor: pointer;
+        width: fit-content;
+        padding: 15px 40px;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: $primary-color;
+        border-bottom: 4px solid $primary-color;
+      }
+    }
+
+    .items {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 20px;
+
+      @include Responsive(L) {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+      }
+      @include Responsive(M) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+      @include Responsive(S) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      @include Responsive(XS) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .showMore {
+      display: block;
+      margin: 0 auto;
+      width: fit-content;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: $white-color;
+      border: 1px solid $border-color;
+      box-shadow: 0 1px 2px $border-color;
+      text-decoration: none;
+      color: $text-color;
+      cursor: pointer;
+
+      @include Responsive(XXS) {
+        font-size: 14px;
+      }
+      &:hover {
+        background-color: $hover-color;
+      }
+    }
+  }
+}

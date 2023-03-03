@@ -1,0 +1,10 @@
+@import "../../../../style/mixin.scss";
+
+.productInfo {
+  .wrapper {
+    background-color: $white-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+}

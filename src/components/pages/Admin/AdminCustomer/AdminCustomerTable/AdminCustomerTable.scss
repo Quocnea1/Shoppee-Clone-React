@@ -1,0 +1,23 @@
+@import "../../../../../style/mixin.scss";
+
+.customerTable {
+  .customerTable-heading {
+    color: $primary-color;
+    margin-right: 206px;
+    padding: 0 85px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 2rem;
+    .time {
+      margin-left: 89px;
+    }
+    .email {
+      margin-right: 22px;
+    }
+  }
+  .customerTable-info {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+}

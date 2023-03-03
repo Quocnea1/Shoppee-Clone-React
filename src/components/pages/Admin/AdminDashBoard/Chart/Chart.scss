@@ -1,0 +1,48 @@
+@import "../../../../../style/mixin.scss";
+
+.chart {
+  .adminContainer {
+    background-color: $white-color;
+    border-radius: 20px;
+    box-shadow: 0 5px 3px -2px $border-color;
+    padding: 20px 0 4px 0;
+
+    .adminChartHeading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .adminChartHeadingTitle {
+        margin-left: 70px;
+
+        .title {
+          color: orange;
+          word-spacing: 0.6rem;
+          letter-spacing: 0.2rem;
+          font-weight: 600;
+        }
+        .renuve {
+          margin-top: 4px;
+          color: $primary-color;
+          font-size: 3rem;
+        }
+      }
+
+      .adminChartYear {
+        margin-right: 30px;
+        background-color: orange;
+        padding: 8px;
+        border-radius: 1rem;
+        color: $white-color;
+        font-size: 1.2rem;
+        font-weight: 700;
+        word-spacing: 0.5rem;
+        box-shadow: 0 0.125rem 0.25rem rgba($black-color, 0.75);
+        letter-spacing: 0.2rem;
+      }
+    }
+    .adminChartBar {
+      margin: 0 3rem 1.4rem;
+    }
+  }
+}

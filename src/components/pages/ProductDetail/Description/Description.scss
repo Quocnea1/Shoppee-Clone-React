@@ -1,0 +1,28 @@
+@import "../../../../style/mixin.scss";
+
+.description {
+
+  .wrapper {
+    padding: 35px 40px 70px;
+    background-color: $white-color;
+    font-size: 1.6rem;
+
+    .detailOutter{
+      display: grid;
+      grid-template-rows: auto;
+      gap: 15px;
+      margin: 30px 0 70px 10px;
+    }
+    .describeOutter{
+      margin: 30px 0 0 10px;
+    }
+  }
+  .descriptionTitle {
+    background-color: #FAFAFA;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 15px 10px;
+    border-radius: 2px;
+    word-spacing: 2px;
+  }
+}

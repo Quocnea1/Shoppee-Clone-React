@@ -1,0 +1,41 @@
+@import "/src/style/mixin.scss";
+
+.Order-SearchBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white-color;
+  margin: 10px 0 10px;
+  padding: 10px 30px;
+
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .search-bar {
+    border: 1px solid $primary-color;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+
+    .__search-input {
+      outline: none;
+      font-size: 18px;
+      border: none;
+      display: inline-block;
+      padding: 5px 0 5px 10px;
+      width: 100%;
+    }
+    .search-btn {
+      background-color: $primary-color;
+      border: none;
+      padding: 5px 16px;
+      outline: none;
+
+      .__search-icon {
+        color: $white-color;
+        font-size: 16px;
+      }
+    }
+  }
+}

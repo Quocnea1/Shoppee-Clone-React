@@ -1,0 +1,96 @@
+@import "../../../../../../style/mixin.scss";
+
+.imageModal {
+  .modalBody {
+    background-color: $white-color;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 15px;
+    border-radius: 2px;
+    width: 1100px;
+
+    @include Responsive(L) {
+      width: 90%;
+    }
+    @include Responsive(M) {
+      width: 75%;
+      flex-direction: column;
+      align-items: center;
+    }
+    .modalThumbnail {
+      position: relative;
+      width: 700px;
+      height: 600px;
+      margin-right: 15px;
+
+      @include Responsive(M) {
+        margin: 0;
+      }
+      .modalNav{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span{
+          cursor: pointer;
+          padding: 20px 10px;
+          font-size: 30px;
+          color: $white-color;
+          background-color: #000000b2;
+
+          @include Responsive(M){
+            padding: 15px 5px;
+            font-size: 25px;
+          }
+        }
+      }
+    }
+    .modalContent {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+
+      @include Responsive(M) {
+        width: 65%;
+      }
+      .modalTitle {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 20px 0 15px;
+
+        @include Responsive(M) {
+          font-size: 16px;
+        }
+        @include Responsive(XS) {
+          font-size: 14px;
+        }
+      }
+      .modalList {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 5px;
+
+        @include Responsive(M) {
+          grid-template-columns: repeat(5, minmax(0, 1fr));
+        }
+        @include Responsive(XS) {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        .image {
+          width: 100px;
+          height: 100px;
+          cursor: pointer;
+          border: 2px solid transparent;
+
+          &.active {
+            border: 2px solid $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

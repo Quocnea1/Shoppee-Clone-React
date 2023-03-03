@@ -1,0 +1,17 @@
+@import "../../../../../style/mixin.scss";
+
+.adminOrderTable {
+  padding: 0 10px;
+  .orderTable-heading {
+    color: $primary-color;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+  }
+  .orderTable {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+}

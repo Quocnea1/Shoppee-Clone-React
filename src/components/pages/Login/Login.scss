@@ -1,0 +1,185 @@
+@import "../../../style/mixin.scss";
+
+.login {
+  background-color: $primary-color;
+  .container {
+    .backgroundImg {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 600px;
+      position: relative;
+    }
+
+    .authFormLogin {
+      position: absolute;
+      background-color: white;
+      top: 14%;
+      right: 10%;
+      border-radius: 0.25rem;
+      width: 32%;
+      box-shadow: 0 0.3rem 1rem 0 #00000024;
+      .wrap {
+        margin: 0 3rem;
+        padding-bottom: 2rem;
+
+        .loginTitle {
+          font-size: 2rem;
+          margin: 2rem 0px 2rem 0px;
+        }
+        .loginInput {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .loginInputUser,
+          .loginInputPassword {
+            position: relative;
+            width: 100%;
+            height: 3.8rem;
+            padding: 0;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+            font-size: 1.4rem;
+            padding: 0 1rem;
+            margin-bottom: 30px;
+
+            &:focus {
+              outline: none;
+              box-shadow: 0 0.125rem 0.25rem rgba($black-color, 0.075);
+            }
+
+            &.input-error {
+              border-color: $primary-color;
+            }
+          }
+          .errorUsername {
+            position: absolute;
+            top: 11.4rem;
+            left: 3.1rem;
+            color: $primary-color;
+            font-size: 1rem;
+          }
+          .errorPassword {
+            position: absolute;
+            top: 18.4rem;
+            left: 3.1rem;
+            color: $primary-color;
+            font-size: 1rem;
+          }
+        }
+
+        .loginBtn {
+          display: block;
+          font-size: 1.4rem;
+          background-color: $primary-color;
+          text-decoration: none;
+          border-radius: 0.25rem;
+          font-size: 1.5rem;
+          outline: none;
+          color: $white-color;
+          height: 4.2rem;
+          width: 100%;
+          margin: 1rem auto 2px;
+          border: 1px solid #ccc;
+          padding: 0;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.9;
+          }
+          &.disabled-btn {
+            cursor: not-allowed;
+            background: rgba($primary-color, 0.8);
+          }
+        }
+
+        .linkForgotPassWord {
+          cursor: pointer;
+          text-decoration: none;
+          color: rgb(33, 100, 200);
+          font-size: 1.2rem;
+          font-weight: 400;
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+
+        .otherLogin {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 0.8rem;
+          color: #ccc;
+          .otherLoginText {
+            font-size: 1.2rem;
+            font-weight: 450;
+            display: block;
+          }
+
+          .line {
+            display: block;
+            max-width: 12rem;
+            width: 100%;
+            height: 0.1px;
+            background-color: #ccc;
+          }
+        }
+
+        .otherLoginBtn {
+          margin: 1.6rem 0 0.6rem 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 1rem;
+
+          .otherLoginbutton {
+            width: 100%;
+            border: 0.2px solid rgb(182, 182, 182);
+          }
+
+          .btn:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+          }
+
+          .otherLoginFaIcon {
+            width: 3rem;
+          }
+
+          .otherLoginGoIcon {
+            width: 2rem;
+            margin-right: 0.4rem;
+          }
+
+          .otherLoginTitle {
+            font-size: 1.4rem;
+            margin-left: 0.4rem;
+          }
+        }
+
+        .gotoRegister {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 1.2rem;
+          color: $text-color2;
+          font-size: 1.3rem;
+
+          .recomendText {
+            font-weight: 500;
+            color: #ccc;
+          }
+          .linkRegister {
+            cursor: pointer;
+            margin-left: 0.8rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: $primary-color;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}

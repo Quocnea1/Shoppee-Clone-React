@@ -1,0 +1,21 @@
+@import "/src/style/mixin.scss";
+
+.btn-filter {
+  cursor: pointer;
+  background-color: $white-color;
+  text-transform: capitalize;
+  border-radius: 2px;
+  margin-bottom: 0.3125rem;
+  padding: 3px 25px;
+  border:1px solid $border-color;
+  font-size: 1.6rem;
+  font-weight: 400;
+  align-items: center;
+  color: black;
+  &.active {
+    color: $primary-color;
+  }
+  &:hover{
+    color: $primary-color;
+  }
+}

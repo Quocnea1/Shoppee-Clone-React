@@ -1,0 +1,10 @@
+@import "../../../../../style/mixin.scss";
+
+.checkout-info {
+    display: inline-block;
+    font-size: 1.6rem;
+    p {
+        float: left;
+        padding-right: 10px;
+    }
+}

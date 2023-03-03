@@ -1,0 +1,47 @@
+.productLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  flex: 8;
+  text-align: left;
+  background-color: #eeeeee;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  gap: 10px;
+
+  .productItemImg {
+    width: 70px;
+  }
+
+  .productItemTitle {
+    color: #ee4d2d;
+    font-weight: 900;
+    font-size: 2rem;
+    flex: 3;
+
+    p {
+      color: #7b7878;
+      font-size: 1.95rem;
+      font-weight: 400;
+    }
+  }
+
+  .productItemOthers {
+    flex: 1;
+    text-align: center;
+
+    h3 {
+      color: #ee4d2d;
+      font-weight: 900;
+      font-size: 2rem;
+      flex: 3;
+    }
+
+    p {
+      color: #7b7878;
+      font-size: 1.95rem;
+      font-weight: 400;
+    }
+  }
+}

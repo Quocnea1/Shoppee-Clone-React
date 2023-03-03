@@ -1,0 +1,28 @@
+@import "../../../../style/mixin.scss";
+
+.emptyCart {
+  margin: 100px 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .emptyCartImg {
+      max-width: 80px;
+      max-height: 80px;
+      display: block;
+    }
+
+    .emptyCartTitle {
+      margin: 10px 0;
+      color: $text-color;
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+
+    .emptyCartBtn {
+      margin-top: 10px;
+    }
+  }
+}

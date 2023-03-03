@@ -1,0 +1,62 @@
+@import "../../../../../style/mixin.scss";
+
+.orderItem {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: $white-color;
+  padding-top: 20px;
+
+  .orderInfo {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 200px 150px 250px 150px auto;
+    align-items: center;
+    background-color: $primary-color2;
+    padding: 10px 30px;
+    border-top: 1px solid $border-color;
+
+    .addressDelivery {
+      font-size: 1.4rem;
+      color: $text-color2;
+    }
+    .phoneDelivery {
+      text-align: right;
+      font-weight: 500;
+    }
+    .totalPrice {
+      font-weight: 500;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      span {
+        color: $primary-color;
+        font-size: 2.2rem;
+        margin-left: 5px;
+      }
+    }
+    .statusOrder {
+      text-align: right;
+
+      &.colorPending {
+        color: $pending-color;
+      }
+      &.colorConfirmed {
+        color: #42d542;
+      }
+      &.colorCancelled {
+        color: #ff504d;
+      }
+      &.colorPendingVNPAY{
+        color: #4d77ff
+      }
+      .icon {
+        font-size: 1rem;
+        margin-right: 5px;
+        position: relative;
+        top: -0.5px;
+      }
+    }
+  }
+}

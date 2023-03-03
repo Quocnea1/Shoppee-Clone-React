@@ -1,0 +1,42 @@
+@import "../../../../style/mixin.scss";
+
+.CheckoutPayment{
+  .wrapper{
+    background-color: white;
+    padding: 10px 15px;
+    margin: 20px 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+
+    .title{
+      color: $primary-color;
+      margin-bottom: 10px;
+      font-weight: bold;
+
+      i{
+        margin-right: 5px;
+      }
+    }
+    .paymentContent{
+      display: flex;
+      gap: 15px;
+
+    }
+    .paymentField{
+      display: flex;
+      align-items: center;
+
+      .input{
+        outline: none;
+      }
+      .label{
+        margin: 0 0 0 5px;
+
+        &.checked{
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

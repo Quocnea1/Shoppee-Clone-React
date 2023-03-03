@@ -1,0 +1,14 @@
+@import "../../../../../style/mixin.scss";
+
+.address-modal {
+  .modalBody {
+    background-color: $white-color;
+    height: 500px;
+    width: 700px;
+    overflow-y: scroll;
+
+    .modalInner{
+      padding: 0 10px;
+    }
+  }
+}

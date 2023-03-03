@@ -1,0 +1,88 @@
+@import '../../../../../style/mixin.scss';
+
+.InfoSection {
+  margin-top: 0;
+  margin-left: 50px;
+  width: 55%;
+  background: rgb(255, 255, 255);
+  line-height: 1.5em;
+
+  .details {
+    display: flex;
+    flex-direction: column;
+
+    .product-title {
+      margin-top: 0;
+    }
+
+    .rating {
+      font-size: 15px;
+      display: flex;
+      .star,
+      .reviews,
+      .votes {
+        margin-right: 20px;
+      }
+    }
+
+    .product-title,
+    .rating,
+    .product-description,
+    .price,
+    .vote,
+    .types,
+    .quantities {
+      margin-bottom: 40px;
+    }
+    .types{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .types,
+    .quantities {
+      font-size: 15px;
+    
+      .quantityTitle{
+        font-size: 1.4rem;
+      }
+    }
+    .quantities {
+      display: flex;
+      align-items: center;
+
+      .quantityInner {
+        margin-left: 9px;
+        display: flex;
+
+        .inventory {
+          font-size: 1.4rem;
+          margin-left: 10px;
+          margin-top: 3px;
+        }
+      }
+    }
+    .addToCart {
+      font-size: 15px;
+      background-color: rgba(255, 87, 34, 0.1);
+      padding: 1em 1.2em;
+      border:1px solid $primary-color;
+      font-weight: bold;
+      color: $primary-color;
+      margin-right: 10px;
+    }
+    .buyNow {
+      font-size: 15px;
+      background-color: $primary-color;
+      padding: 1em 1.2em;
+      border: none;
+      font-weight: bold;
+      color: #fff;
+      margin-right: 10px;
+    }
+    .addToCart:focus,
+    .buyNow:focus {
+      outline: none;
+    }
+  }
+}

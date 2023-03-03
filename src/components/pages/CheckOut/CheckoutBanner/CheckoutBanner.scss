@@ -1,0 +1,26 @@
+@import "../../../../style/mixin.scss";
+
+.checkout-address {
+  background-color: $white-color;
+  .container {
+    .checkout-heading {
+      display: flex;
+      justify-content: flex-start;
+
+      .checkout-logo {
+        .checkout-image {
+          width: 130px;
+          padding: 10px 14px;
+          border-right: 1px solid $primary-color;
+          margin-top: 13px;
+        }
+      }
+      .checkout-title {
+        color: $primary-color;
+        font-size: 20px;
+        padding-left: 10px;
+        line-height: 82px;
+      }
+    }
+  }
+}

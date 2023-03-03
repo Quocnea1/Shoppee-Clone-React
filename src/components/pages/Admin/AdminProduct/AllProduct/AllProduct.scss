@@ -1,0 +1,23 @@
+@import "../../../../../style/mixin.scss";
+
+.all-product-container {
+  height: auto !important;
+  background-color: white;
+  padding: 4rem !important;
+  margin-bottom: 500px !important;
+  border-radius: 2rem;
+  box-shadow: 0 5px 3px -2px $border-color;
+  margin-top: 5rem !important;
+
+  .allProductSection {
+    height: 700px !important;
+    overflow-y: scroll;
+    padding: 0 10px;
+  }
+  .allProductTitle {
+    color: #ee4d2d;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 3rem;
+  }
+}

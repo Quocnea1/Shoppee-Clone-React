@@ -1,0 +1,30 @@
+@import "../../../style/mixin.scss";
+
+.header2 {
+  background-color: white;
+  height: 84px;
+  .container {
+    display: flex;
+    align-items: center;
+    padding: 0 0;
+    justify-content: space-between;
+    .wrapper {
+      display: flex;
+      align-items: center;
+      .title {
+        margin-top: 12px;
+        margin-left: 10px;
+        font-size: 2.5rem;
+      }
+      img {
+        width: 150px !important;
+        cursor: pointer;
+      }
+    }
+    .helpAnchor {
+      font-size: 1.5rem;
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@import "../../../style/mixin.scss";
+
+.productFrame {
+  position: relative;
+  cursor: pointer;
+  background-color: $white-color;
+  border: 1.5px solid transparent;
+  transition: margin .1s;
+  box-shadow: 0 2px 2px $border-color;
+
+  &:hover{
+    border: 1.5px solid $primary-color;
+    margin-top: -2px;
+    margin-bottom: 2px;
+  }
+  .favouriteTag{
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    color: $primary-color;
+    background-color: currentColor;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding-right: 4px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    &::after{
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: -3px;
+      border-top: 3px solid currentColor;
+      border-left: 3px solid transparent;
+      filter: brightness(60%);
+    }
+    span{
+      color: $white-color;
+    }
+    i {
+      color: $white-color;
+      font-size: 1rem;
+      margin: 0 2px 0 4px;
+    }
+  }
+  .productImg{
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+  }
+  .productInfo {
+    position: relative;
+    padding: 0 7px 10px 7px;
+    height: 110px;
+
+    .productStar{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.1rem;
+
+      .sold{
+        margin-bottom: -5px;
+      }
+    }
+    .productTitle {
+      font-size: 14px;
+      height: 45px;
+    }
+    .productPrice{
+      position: absolute;
+      color: $primary-color;
+      font-size: 18px;
+      bottom: 10px;
+    }
+  }
+}

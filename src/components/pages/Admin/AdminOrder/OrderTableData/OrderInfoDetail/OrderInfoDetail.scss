@@ -1,0 +1,63 @@
+@import "../../../../../../style/mixin.scss";
+
+.order-info-table {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  padding: 10px 30px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  max-height: 300px;
+
+  .order-info-name {
+    width: 90px;
+  }
+  .order-info-time {
+    width: 150px;
+  }
+  .order-info-status {
+    padding: 0 5px;
+    width: 146px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    &.pending {
+      background-color: $pending-color;
+    }
+    &.shipping {
+      background-color: #66b3ff;
+    }
+    &.done {
+      background-color: #00e600;
+      opacity: 0.5;
+    }
+    &.else {
+      background-color: #ff1511;
+      opacity: 0.5;
+    }
+  }
+  .order-info-info {
+    width: 150px;
+  }
+  .order-info-amount {
+    width: 150px;
+  }
+  .order-info-button {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 1px 1px;
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+      outline: none;
+    }
+  }
+}

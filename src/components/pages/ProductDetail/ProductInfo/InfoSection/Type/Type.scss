@@ -1,0 +1,31 @@
+@import '../../../../../../style/mixin.scss';
+
+.type {
+  &:hover {
+    .buttonType {
+      color: $primary-color;
+      border: 1px solid $primary-color;
+    }
+  }
+  .buttonType {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 2px;
+    background-color: $white-color;
+    font-size: 1.6rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  .selected{
+    color: $primary-color;
+    border: 1px solid $primary-color;
+  }
+  // .buttonType:focus {
+  //   color: rgb(238, 77, 45);
+  //   outline-color: rgb(238, 77, 45);
+  // }
+}

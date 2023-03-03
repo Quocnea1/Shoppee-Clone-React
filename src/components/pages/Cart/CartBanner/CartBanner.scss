@@ -1,0 +1,81 @@
+@import '../../../../style/mixin.scss';
+
+.cartBanner{
+  background-color: $white-color;
+
+  .cartInfo {
+    padding: 40px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white-color;
+  
+    .textSection {
+      font-size: 20px;
+      color: $primary-color;
+      font-weight: 500;
+    }
+  
+    .searchSection {
+      flex: 1;
+      margin-left: 70px;
+      margin-right: 35px;
+      max-width: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .searchBar {
+        height: 40px;
+        flex: 1;
+        padding-left: 10px;
+        font-size: 16px;
+        border: 1px solid $primary-color;
+        box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+        width: 0;
+      }
+      .searchBar::placeholder {
+        font-family: Roboto, Arial;
+        font-size: 16px;
+      }
+      
+      .searchBar:focus {
+        outline: none;
+      }
+  
+      .searchButton {
+        background-color: $primary-color;
+        color: white;
+        height: 40px;
+        width: 70px;
+        padding: 10px;
+        border: 0.5px solid $primary-color;
+        margin-left: -1px;
+        cursor: pointer;
+        position: relative;
+        .searchButtonIcon{
+          font-size: 1.6rem;
+        }
+      }
+      .searchButton:focus {
+        outline: none;
+      }
+      
+      
+      
+  
+    }
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+

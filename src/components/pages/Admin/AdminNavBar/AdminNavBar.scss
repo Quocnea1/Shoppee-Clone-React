@@ -1,0 +1,10 @@
+.adminNavBar {
+  display: flex;
+  gap: 20px;
+
+  .navBarContent{
+    margin-left: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+}

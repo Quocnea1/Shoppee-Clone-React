@@ -1,0 +1,17 @@
+@import "../../../../../../style/mixin.scss";
+
+.category-item {
+  font-size: 1.4rem;
+  padding: 4px 0;
+  .category-item__link {
+    color: $text-color;
+    text-decoration: none;
+    position: relative;
+    transition: right linear 0.1s;
+    font-weight: 450;
+    &:hover {
+      right: -2px;
+      color: $primary-color;
+    }
+  }
+}

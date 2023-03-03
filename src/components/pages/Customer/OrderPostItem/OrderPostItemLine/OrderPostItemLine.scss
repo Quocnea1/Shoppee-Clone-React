@@ -1,0 +1,52 @@
+@import "../../../../../style/mixin.scss";
+
+.orderPostItemLine {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 80px 300px 200px 100px 150px auto;
+  align-items: center;
+  color: $text-color;
+  padding: 0 30px;
+
+  .orderItemImg {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border: 2px solid $white-color;
+  }
+  .orderItemTitle {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+
+  .orderItemType {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  .orderItemQuantity {
+    text-align: right;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .orderItemPrice {
+    text-align: right;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: $primary-color;
+  }
+  .orderItemRating {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #7b7b7b;
+    text-decoration: underline;
+    text-align: right;
+
+    &:hover {
+      cursor: pointer;
+      color: rgb(168, 168, 168);
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../../../style/mixin.scss";
+
+.header__search__recom-item {
+  font-size: 1.2rem;
+  color: $white-color;
+  text-decoration: none;
+  padding: 0 8px;
+
+  &:hover {
+    text-decoration: none;
+    color: $white-color;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}

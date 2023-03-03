@@ -1,0 +1,61 @@
+@import "../../../../style/mixin.scss";
+
+.productSection {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 200px;
+
+    .products {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .noProduct{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 2rem;
+        color: $text-color2;
+        margin-top: 50px;
+
+        i{
+          font-size: 5rem;
+          margin-bottom: 20px;
+        }
+      }
+      .title {
+        background-color: $white-color;
+        box-shadow: 0 2px 2px $border-color;
+        margin-bottom: 7px;
+
+        div {
+          cursor: pointer;
+          width: fit-content;
+          padding: 15px 40px;
+          text-transform: uppercase;
+          font-size: 18px;
+          color: $primary-color;
+          border-bottom: 4px solid $primary-color;
+        }
+      }
+      .items {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 10px;
+        margin-bottom: 20px;
+
+        @include Responsive(L) {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+        @include Responsive(M) {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        @include Responsive(S) {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+    }
+  }
+}

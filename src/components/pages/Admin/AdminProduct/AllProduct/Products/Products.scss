@@ -1,0 +1,139 @@
+@import "../../../../../../style/mixin.scss";
+
+.allProductLine {
+  display: block;
+  margin-bottom: 1rem;
+
+  .showMore {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 30px;
+    color: $text-color;
+    width: 85%;
+    font-size: 1.6rem;
+    padding: 10px 40px;
+    border-radius: 0 0 20px 20px;
+    background-color: aliceblue;
+    text-align: left;
+    @include animate("dropDown linear 0.25s");
+
+    .typeLabel {
+      display: grid;
+      grid-template-columns: 50% 25% 25%;
+      margin-bottom: 5px;
+
+      .label {
+        color: $primary-color;
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+    }
+    .typeContent {
+      color: $text-color;
+      div {
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        border-top: 1px solid $border-color;
+        margin: 5px 0;
+      }
+    }
+  }
+  .allProductContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    padding: 1rem 2rem;
+    text-align: left;
+    background-color: #eeeeee;
+    border-radius: 1.8rem;
+    z-index: 99;
+
+    .showMoreButton {
+      font-size: 2rem;
+      margin-right: 1rem;
+      background-color: $border-color;
+      border-radius: 50%;
+      min-width: 0px;
+
+      .left {
+        margin: 0 4.5px;
+      }
+      .down {
+        margin: 0 2px;
+      }
+    }
+    .editButton {
+      font-size: 1.6rem;
+      margin-right: 1rem;
+      background-color: $primary-color;
+      color: $white-color;
+      border-radius: 50%;
+      min-width: 0px;
+
+      &:hover {
+        filter: brightness(105%);
+      }
+      i {
+        margin: 0 2px;
+      }
+    }
+
+    .productItemImg {
+      width: 70px;
+      height: 70px;
+    }
+
+    .productItemTitle {
+      color: #ee4d2d;
+      font-weight: 900;
+      font-size: 1.8rem;
+      flex: 3;
+
+      p {
+        margin-top: 5px;
+        color: #000000;
+        font-size: 1.95rem;
+        font-weight: 400;
+      }
+    }
+
+    .productItemStars {
+      flex: 2;
+      text-align: center;
+
+      h3 {
+        color: #ee4d2d;
+        font-weight: 900;
+        font-size: 1.8rem;
+        flex: 3;
+      }
+
+      p {
+        color: #000000;
+        font-size: 1.95rem;
+        font-weight: 400;
+      }
+    }
+
+    .productItemOthers {
+      flex: 1;
+      text-align: center;
+
+      h3 {
+        color: #ee4d2d;
+        font-weight: 900;
+        font-size: 1.8rem;
+        flex: 3;
+      }
+
+      p {
+        color: #000000;
+        font-size: 1.95rem;
+        font-weight: 400;
+      }
+    }
+  }
+}

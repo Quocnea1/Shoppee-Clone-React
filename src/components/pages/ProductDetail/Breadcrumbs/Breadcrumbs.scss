@@ -1,0 +1,9 @@
+@import "../../../../style/mixin.scss";
+.breadcrumbs {
+  background-color: transparent;
+  .wrapper {
+    font-size: 14px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}

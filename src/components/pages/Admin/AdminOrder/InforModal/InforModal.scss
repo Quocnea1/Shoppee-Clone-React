@@ -1,0 +1,79 @@
+@import "../../../../../style/mixin.scss";
+
+.ModalInfo {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  width: 70%;
+  bottom: auto;
+  color: "red";
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.btn-style {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid $primary-color;
+  background: none;
+  font-size: 15px;
+  float: right;
+  margin: 0 20px;
+  &:hover {
+    background-color: $primary-color;
+    outline: none;
+    color: white;
+  }
+  &.cancel {
+    border: 2px solid #808080;
+    &:hover {
+      background-color: #808080;
+      outline: none;
+    }
+  }
+  &.confirm {
+    &:hover {
+        background-color: #00e600;
+        outline: none;
+      }
+}
+  &.btn-hide {
+    cursor: not-allowed;
+    border: 2px solid #808080;
+    
+    &:hover {
+        background-color: #808080;
+        outline: none;
+        color: white;
+        opacity: 70%;
+      }
+  }
+}
+.data-in-modal {
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  &.pending {
+    background-color: $primary-color;
+    color: white;
+  }
+  &.cancelled {
+    background-color: #808080;
+    color: white;
+  }
+  &.done {
+    background-color: #00e600;
+    color: white;
+  }
+  &.else {
+    background-color: transparent;
+  }
+}
+.modal-title {
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+}
+.modalOverlay {
+    background-color: transparent;
+}

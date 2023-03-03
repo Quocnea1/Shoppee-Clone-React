@@ -1,0 +1,75 @@
+@import "../../../../../style/mixin.scss";
+
+.filter {
+  width: 230px;
+  .category {
+    .category__heading {
+      font-size: 1.6rem;
+      word-spacing: 3px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 20px 0;
+      .category__heading-icon {
+        margin-right: 8px;
+        font-size: 1.2rem;
+      }
+    }
+
+    .category-list {
+      list-style: none;
+      font-size: 1.6rem;
+      font-weight: 600;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      margin-top: 16px;
+      &:hover {
+        cursor: pointer;
+      }
+      .category-list__link {
+        position: relative;
+        text-decoration: none;
+        color: $text-color;
+        display: block;
+        margin-bottom: 10px;
+      }
+      .category-item--active {
+        .category-item__link {
+          color: $primary-color;
+
+          &::before {
+            content: "";
+            top: 50%;
+            left: -7px;
+            position: absolute;
+            border: 4px solid;
+            transform: translateY(-50%);
+            border-color: transparent transparent transparent $primary-color;
+          }
+        }
+      }
+    }
+
+    .category__price {
+      display: flex;
+      // justify-content: space-between;
+      gap: 12px;
+
+      .category__price-input {
+        width: 100%;
+        color: $text-color;
+        font-size: 1.3rem;
+        box-sizing: border-box;
+        height: 36px;
+        border: 1px solid#ccc;
+        border-radius: 2px;
+        outline: none;
+        padding: 0 8px;
+      }
+    }
+
+    .category__search-button {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}

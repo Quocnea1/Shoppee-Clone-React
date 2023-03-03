@@ -1,0 +1,26 @@
+@import "../../../../../style/mixin.scss";
+
+.imageSection {
+  width: 45%;
+
+  .thumbnail{
+    cursor: pointer;
+    width: 504px;
+    height: 504px;
+  }
+  .imageNav {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
+
+    .image {
+      cursor: pointer;
+      border: 2px solid transparent;
+
+      &:hover {
+        border: 2px solid $primary-color;
+      }
+    }
+  }
+}
